@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FURIA CS Fans Chat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <img src="logo-marca.png" alt="FURIA Logo">
+      <span>Chat Oficial FURIA</span>
+    </div>
+    <div id="messages" class="messages">
+      <div class="bot-message">🔥 Bem-vindo, FURIOSO! Aqui a emoção é constante! 💪🏆 Como podemos te ajudar hoje?</div>
+    </div>
+    <div class="button-container">
+      <button class="chat-button" onclick="quickReply('Próximo jogo')">📅 Próximo Jogo</button>
+      <button class="chat-button" onclick="quickReply('Últimos resultados')">🏆 Últimos Resultados</button>
+      <button class="chat-button" onclick="quickReply('Go FURIA')">🔥 Go FURIA!</button>
+      <button class="chat-button" onclick="quickReply('Dúvidas')">❓ Dúvidas</button>
+    </div>
+    <div class="input-container">
+      <input type="text" id="userInput" placeholder="Digite sua mensagem...">
+      <button class="send-button" onclick="handleUserInput()">Enviar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
