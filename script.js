@@ -18,7 +18,7 @@ function addBotMessage(text) {
 
 function simulateConversation(messagesArray) {
   const messages = document.getElementById('messages');
-  messages.removeChild(messages.lastChild); // remove "digitando..."
+  messages.removeChild(messages.lastChild); 
   let delay = 0;
   messagesArray.forEach((msg) => {
     delay += 1500;
